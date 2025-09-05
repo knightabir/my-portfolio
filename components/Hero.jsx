@@ -1,14 +1,14 @@
 export default function HeroSection() {
     return (
-        <section className="min-h-screen flex items-center py-0">
-            <div className="container mx-auto">
+        <section className="flex items-center px-6 lg:px-12 pt-5">
+            <div className="container mx-auto px-0">
                 <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 xl:gap-20">
                     {/* Left side - Text content */}
                     <div className="flex-1 max-w-xl lg:max-w-2xl text-center lg:text-left">
                         <h1 className="text-gray-900 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 lg:mb-6 leading-tight">
                             I'm <span className="text-green-500 hover:text-green-400 transition-colors duration-300">Abir</span> Sarkar
                         </h1>
-                        <p className="text-gray-700 text-base sm:text-lg lg:text-xl leading-relaxed mb-6 lg:mb-8 max-w-prose">
+                        <p className="text-gray-700 text-base sm:text-lg lg:text-xl leading-relaxed mb-0 lg:mb-0 max-w-prose">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.
                         </p>
                     </div>

@@ -7,7 +7,7 @@ import { Mail, Github, Linkedin } from "lucide-react";
 
 export default function Contact() {
     return (
-        <section className="py-8 sm:py-10 md:py-12">
+        <section id="contact-me" className="py-8 sm:py-10 md:py-12">
             <div className="container mx-auto flex flex-col md:flex-row gap-8 md:gap-10 items-stretch md:items-center justify-center px-4 sm:px-6">
                 {/* Left side: Contact Form */}
                 <Card className="w-full max-w-full sm:max-w-lg border-none rounded-none shadow-none flex-1">

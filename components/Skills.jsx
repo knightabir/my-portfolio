@@ -195,7 +195,7 @@ export default function Skills() {
     ];
 
     return (
-        <div>
+        <section id="skills">
             <div className="text-center mb-8">
                 <span className="text-4xl">
                     My <span className="font-extrabold">Skills</span>
@@ -240,6 +240,6 @@ export default function Skills() {
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     );
 }

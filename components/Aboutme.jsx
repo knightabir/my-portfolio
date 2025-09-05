@@ -1,8 +1,8 @@
 export default function Aboutme() {
     return (
-        <section className="w-full py-8 md:py-16">
-            <div className="container mx-auto flex flex-col md:flex-row gap-10 md:gap-17 items-center justify-center px-4">
-                <div className="flex-shrink-0 flex justify-center md:justify-start w-full md:w-auto mb-8 md:mb-0">
+        <section id="about-me" className="w-full px-4 md:px-8 lg:px-16">
+            <div className="container mx-auto flex flex-col md:flex-row gap-10 md:gap-17 items-center justify-center">
+                <div className="flex-shrink-0 flex justify-center md:justify-start w-full md:w-auto">
                     {/* Placeholder for SVG image */}
                     <div className="w-64 h-64 md:w-[320px] md:h-[320px] lg:w-[400px] lg:h-[400px] xl:w-[530px] xl:h-[530px] flex items-center justify-center text-muted-foreground text-lg font-semibold">
                         <svg width="530" height="572" viewBox="0 0 530 572" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,7 +52,7 @@ export default function Aboutme() {
                     </div>
                 </div>
                 <div className="max-w-xl w-full">
-                    <div className="flex flex-row gap-2 items-center justify-center mb-5">
+                    <div className="flex flex-row gap-2 items-center justify-center">
                         <span className="text-4xl sm:text-5xl">About</span>
                         <span className="font-bold text-4xl sm:text-5xl">Me</span>
                     </div>
