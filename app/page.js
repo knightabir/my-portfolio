@@ -12,7 +12,9 @@ export default function Home() {
     <div>
       <Navbar />
       <main className="flex flex-col gap-16 md:gap-24">
-        <HeroSection />
+        <div className="max-w-6xl flex justify-center items-center mx-auto">
+          <HeroSection />
+        </div>
         <div className="max-w-4xl flex justify-center items-center mx-auto">
           <Skills />
         </div>
