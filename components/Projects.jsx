@@ -32,7 +32,7 @@ export default function Projects() {
     ];
 
     return (
-        <section className="bg-black py-16">
+        <section id="project" className="bg-black py-16">
             <div className="container mx-auto px-4">
                 {/* Section Title */}
                 <div className="text-4xl text-white text-center mb-16">
