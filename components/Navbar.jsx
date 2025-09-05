@@ -40,7 +40,7 @@ export default function Navbar() {
         {/* Desktop Resume Button */}
         <div className="hidden md:flex">
           <a
-            href="/resume.pdf"
+            href="/Abir_Sarkar_full_stack_dev.pdf"
             download
             className="flex items-center gap-2 px-4 py-2 border bg-black border-gray-300 text-white hover:bg-gray-100 hover:text-black transition-colors font-medium rounded"
           >
@@ -83,7 +83,7 @@ export default function Navbar() {
                   ))}
                   <SheetClose asChild>
                     <a
-                      href="/resume.pdf"
+                      href="/Abir_Sarkar_full_stack_dev.pdf"
                       download
                       className="mt-6 flex items-center gap-2 px-4 py-2 border bg-black border-gray-300 text-white hover:bg-gray-100 hover:text-black transition-colors font-medium rounded"
                     >

@@ -4,6 +4,7 @@ import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Image from "next/image";
 
@@ -20,6 +21,9 @@ export default function Home() {
         </div>
         <Experience />
         <Aboutme />
+        <div className="p-0">
+          <Projects />
+        </div>
         <Contact />
       </main>
       <Footer />
