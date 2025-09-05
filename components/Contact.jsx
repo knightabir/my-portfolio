@@ -2,17 +2,16 @@
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Mail, Github, Linkedin } from "lucide-react";
 
 export default function Contact() {
     return (
-        <section className="py-12">
-            <div className="container mx-auto flex flex-col md:flex-row gap-8 items-center justify-center">
+        <section className="py-8 sm:py-10 md:py-12">
+            <div className="container mx-auto flex flex-col md:flex-row gap-8 md:gap-10 items-stretch md:items-center justify-center px-4 sm:px-6">
                 {/* Left side: Contact Form */}
-                <Card className="w-full max-w-lg border-none  rounded-none shadow-none">
-                    <CardHeader className="rounded-none">
-                    </CardHeader>
+                <Card className="w-full max-w-full sm:max-w-lg border-none rounded-none shadow-none flex-1">
+                    <CardHeader className="rounded-none" />
                     <CardContent className="rounded-none">
                         <form className="flex flex-col gap-4">
                             <Input
@@ -38,11 +37,11 @@ export default function Contact() {
                                 rows={4}
                                 className="rounded-none border border-black"
                             />
-                            <div className="flex items-center gap-2 mt-1">
-                                <Button type="submit" className="w-fit rounded-none">
+                            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 mt-1">
+                                <Button type="submit" className="w-full sm:w-fit rounded-none">
                                     Get In Touch
                                 </Button>
-                                <div className="flex gap-3">
+                                <div className="flex gap-3 mt-2 sm:mt-0">
                                     <a
                                         href="mailto:your@email.com"
                                         target="_blank"
@@ -83,7 +82,7 @@ export default function Contact() {
                 </Card>
 
                 {/* Right side: Contact Info or Illustration */}
-                <div className="hidden md:flex flex-col items-start justify-center w-full max-w-md px-8 py-10 bg-white/80 rounded-xl shadow-lg border border-muted">
+                <div className="flex flex-col border-none items-start justify-center w-full max-w-full sm:max-w-md px-4 sm:px-8 py-8 sm:py-10 border border-muted mt-8 md:mt-0 md:ml-0 md:max-w-md md:px-8 md:py-10 md:flex">
                     <h2 className="mb-1 text-2xl font-extrabold tracking-tight text-primary">
                         Let's <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Talk</span>
                     </h2>
@@ -112,26 +111,6 @@ export default function Contact() {
                                 className="text-base font-medium hover:underline transition-colors"
                             >
                                 +91 9641598284
-                            </a>
-                        </div>
-                        <div className="flex gap-3 mt-3">
-                            <a
-                                href="https://github.com/yourusername"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="p-2 rounded-full border border-muted hover:bg-primary hover:text-white transition-colors"
-                                aria-label="GitHub"
-                            >
-                                <Github size={20} />
-                            </a>
-                            <a
-                                href="https://linkedin.com/in/yourusername"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="p-2 rounded-full border border-muted hover:bg-primary hover:text-white transition-colors"
-                                aria-label="LinkedIn"
-                            >
-                                <Linkedin size={20} />
                             </a>
                         </div>
                     </div>
