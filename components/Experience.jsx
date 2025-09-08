@@ -1,21 +1,26 @@
+import { Circle, KeyRound, PointerIcon } from "lucide-react";
 import Image from "next/image";
 
 const experiences = [
     {
         company: "Freelance",
-        logo: "F", // Replace with your actual freelance logo if available
+        logo: "F",
         role: "Freelance Frontend Developer",
         year: "Jan 2017 - Oct 2019",
-        description:
-            "Worked with a variety of clients on diverse web development projects, specializing in building responsive and user-friendly interfaces. Delivered high-quality solutions tailored to client needs, collaborating closely to ensure project success and satisfaction.",
+        description: [
+            "Specialized in REST API development using Node.js, Express.js, React, Spring Boot, Python Flask, and Django.",
+            "Developed and maintained over 15+ applications, database, and cloud deployment solutions."
+        ]
     },
     {
         company: "xLayer Technologies Private Limited",
         logo: "https://ik.imagekit.io/sbwxpfy3z/tr:w-192/xlayerLogoWhite.webp",
         role: "Software Developer at xLayer",
         year: "March 2024 - August 2024",
-        description:
-            "Contributed to the development of scalable web applications and internal tools at xLayer Technologies. Collaborated with cross-functional teams to design, implement, and optimize features, focusing on performance, maintainability, and user experience.",
+        description: [
+            "Built JavaSpring Bootmicroservices for attendance system, improving efficiency by 35%.",
+            "Developed Python Tornado APIs for loan app, processing 500+ daily transactions with 99.9% uptime."
+        ]
     },
 ];
 
@@ -55,7 +60,13 @@ export default function Experience() {
                             <span className="text-white text-sm">{exp.year}</span>
                         </div>
                         <p className="text-white text-sm leading-relaxed">
-                            {exp.description}
+                            {exp.description.map((line, i) => (
+                                <span key={i}>
+                                    <Circle className="inline-block mr-2 mb-1" size={12} key={"icon-" + i} />
+                                    {line}
+                                    <br />
+                                </span>
+                            ))}
                         </p>
                     </div>
                 ))}
