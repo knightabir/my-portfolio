@@ -4,30 +4,39 @@ export default function Projects() {
     const projects = [
         {
             number: "01",
-            title: "Crypto Screener Application",
-            description: "A comprehensive cryptocurrency screening application built with React and Node.js. Features real-time price tracking, portfolio management, and advanced filtering options. The app provides users with detailed market analysis and investment insights.",
-            githubUrl: "https://github.com/knightabir/crypto-screener",
-            liveUrl: "https://crypto-screener-demo.vercel.app",
-            tech: ["React", "Node.js", "MongoDB", "Chart.js"],
-            image: "https://placehold.co/400x300?text=Crypto+Screener"
+            title: "Riot QR - Real Time QR Generator",
+            description: "A real-time QR code and barcode generator that allows users to create, download, and share codes effortlessly without requiring login. Built with React and Node.js, Riot QR offers a seamless and intuitive user experience for generating both QR codes and barcodes instantly. No user data is stored on the server, ensuring privacy and security.",
+            githubUrl: "https://github.com/knightabir/RiotQR.git",
+            liveUrl: "https://riotqr.vercel.app",
+            tech: ["React", "Node.js", "QR Code", "Barcode"],
+            image: "./riot_qr.png"
         },
         {
             number: "02",
-            title: "Euphoria - Ecommerce Website",
-            description: "A modern e-commerce platform specializing in apparel and fashion. Built with Next.js and integrated with Stripe for payments. Features include product catalog, shopping cart, user authentication, and admin dashboard for inventory management.",
-            githubUrl: "https://github.com/knightabir/euphoria-ecommerce",
-            liveUrl: "https://euphoria-ecommerce.vercel.app",
-            tech: ["Next.js", "Stripe", "PostgreSQL", "Tailwind CSS"],
-            image: "https://placehold.co/400x300?text=Euphoria+Ecommerce"
+            title: "S3 Drive - Cloud Storage Solution",
+            description: "A AWS S3 wrapper application, allows users to upload, manage and share files seamlessly. Built with Next.js, it offers a user-friendly interface and robust security features, We are not storing any of your personal data in the database, it stores in your browser localstorage, and when you logout then clears all the data from your browser.",
+            githubUrl: "https://github.com/knightabir/S3Drive.git",
+            liveUrl: "https://my-s3-drive.vercel.app",
+            tech: ["Next.js", "AWS", "Tailwind CSS", "Shadcn UI"],
+            image: "./s3_drive.png"
         },
         {
             number: "03",
-            title: "Blog Website Template",
-            description: "A responsive blog platform with content management system. Features include article creation, category management, comment system, and SEO optimization. Built with modern web technologies for optimal performance and user experience.",
-            githubUrl: "https://github.com/knightabir/blog-template",
-            liveUrl: "https://blog-template-demo.vercel.app",
-            tech: ["Next.js", "Sanity CMS", "TypeScript", "Framer Motion"],
-            image: "https://placehold.co/400x300?text=Blog+Template"
+            title: "AI-Powered Travel Planning Platform",
+            description: "An AI-driven travel planning application that leverages Google Gemini to create personalized itineraries. Users can input their preferences and receive tailored travel plans, including accommodation, activities, and dining options. Built with Next.js and MongoDB for a seamless user experience.",
+            githubUrl: "https://github.com/knightabir/my-ai-travel-planner.git",
+            liveUrl: "https://my-ai-tour-planner.vercel.app/",
+            tech: ["Next.js", "Node.js", "MongoDB", "Google Gemini", "Vercel"],
+            image: "./ai_Travel_planner.png"
+        },
+        {
+            number: "04",
+            title: "Incenti Track - Sales Incentive Tracker",
+            description: "Sales tracking software where sales personnel can monitor performance and calculate potential incentives. Built with Next.js, ShadCN UI, and MongoDB, it features secure authentication with NextAuth, JWT, and Google Login for seamless and protected access.",
+            githubUrl: "https://github.com/knightabir/IncentiTrack.git",
+            liveUrl: "https://incenti-track.vercel.app/",
+            tech: ["Next.js", "ShadCN UI", "MongoDB", "NextAuth", "JWT", "Google Login"],
+            image: "./incenti_track.png"
         }
     ];
 
